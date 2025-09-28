@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#canHouse {
+  border: 1px solid black;
+}
+
+button {
+  border: none;
+  padding: 10px 20px;
+  margin: 40px 10px;
+  background: rgb(150, 130, 130);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+button:hover {
+  cursor: pointer;
+  background: rgba(235, 71, 71, 0.616);
+}
+
+button a {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 14px;
+}
