@@ -52,14 +52,14 @@ li {
   align-items: center;
   padding: 8px;
   cursor: pointer;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #a59d9d;
 }
 li.completed span {
   text-decoration: line-through;
-  color: rgb(58, 55, 55);
+  color: rgb(172, 155, 155);
 }
 .delete-btn {
-  background: red;
+  background: rgba(198, 20, 20, 0.838);
   border: none;
   color: white;
   padding: 4px 8px;

@@ -22,6 +22,35 @@
       </form>
       <ul id="todo-list"></ul>
     </div>
-    <script></script>
+    <script>
+      $("#todo-form").on("submit", function (e) {
+        e.preventDefault();
+
+        let task = $("#todo-input").val().trim();
+        if (task === "") return;
+
+        let $li = $("<li></li>");
+        $("#todo-list").append($li);
+
+        let $span = $("<span></span>").text(task);
+        // $span.text = task;
+        $li.append($span);
+
+        $span.on("click", function () {
+          $li.toggleClass("completed");
+        });
+
+        let $deleteBtn = $("<button class='delete-btn'>X</button>");
+        // $deleteBtn.textContent = "X";
+        $li.append($deleteBtn);
+        // $deleteBtn.className = "delete-btn";
+
+        $deleteBtn.on("click", function () {
+          $li.remove();
+        });
+
+        $("#todo-input").val("");
+      });
+    </script>
   </body>
 </html>
